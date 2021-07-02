@@ -1,0 +1,10 @@
+let count = 1;
+let arr = new Array();
+while(count <= 10)
+{
+    var random = Math.random()*(899)+100;
+    random = Math.floor(random);
+    arr = [random];
+    console.log(arr);
+    count ++;
+}

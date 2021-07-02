@@ -1,0 +1,7 @@
+let count = 1;
+while(count <= 10)
+{
+    var random = Math.random()*(999)+100;
+    console.log(Math.floor(random));
+    count ++;
+}

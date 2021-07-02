@@ -1,0 +1,27 @@
+var count = 1;
+var arr = new Array();
+var size = 0;
+function RandomNumbers()
+{
+    while(count <= 10)
+    {
+        var random = Math.random()*(899)+100;
+        random = Math.floor(random);
+        arr[size] = random;
+        size ++;
+        console.log(arr);
+        count ++;
+    }
+}
+var temp;
+function findSecondSmallest_SecondLargest()
+{
+    arr.sort();
+    console.log("Array after sorting:");
+    console.log(arr);
+    console.log("second largest element",arr[8]);
+    console.log("second smallest element",arr[1]);
+}
+
+RandomNumbers();
+findSecondSmallest_SecondLargest();
